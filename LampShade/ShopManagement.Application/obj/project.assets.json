@@ -1,0 +1,288 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Microsoft.NETCore.Platforms/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Slugify.Core/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4",
+          "system.Text.Encoding.CodePages": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Slugify.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Slugify.Core.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "0_Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/0_Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/0_Framework.dll": {}
+        }
+      },
+      "ShopManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Application.Contracts.dll": {}
+        }
+      },
+      "ShopManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.NETCore.Platforms/3.1.0": {
+      "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Slugify.Core/3.0.0": {
+      "sha512": "lJiN2OUUu/zOErZzuv+rUnR2S7qvXthhuF+xoqiymoTx+YnqtOjzPwp+c9i7zVrKHFqCOSV1PSJeUEE4hiofBw==",
+      "type": "package",
+      "path": "slugify.core/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Slugify.Core.dll",
+        "slugify.core.3.0.0.nupkg.sha512",
+        "slugify.core.nuspec"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Encoding.CodePages/4.7.0": {
+      "sha512": "aeu4FlaUTemuT1qOd1MyU4T516QR4Fy+9yDbwWMPHOHy7U8FD6SgTzdZFO7gHcfAPHtECqInbwklVvUK4RHcNg==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.xml",
+        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.4.7.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "0_Framework/1.0.0": {
+      "type": "project",
+      "path": "../0_Framework/0_Framework.csproj",
+      "msbuildProject": "../0_Framework/0_Framework.csproj"
+    },
+    "ShopManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj",
+      "msbuildProject": "../ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj"
+    },
+    "ShopManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Domain/ShopManagement.Domain.csproj",
+      "msbuildProject": "../ShopManagement.Domain/ShopManagement.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "ShopManagement.Application.Contracts >= 1.0.0",
+      "ShopManagement.Domain >= 1.0.0",
+      "Slugify.Core >= 3.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Behnam\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Behnam\\Desktop\\Programming\\VS\\Final_Project\\Code\\LampShade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+      "projectName": "ShopManagement.Application",
+      "projectPath": "C:\\Users\\Behnam\\Desktop\\Programming\\VS\\Final_Project\\Code\\LampShade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+      "packagesPath": "C:\\Users\\Behnam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Behnam\\Desktop\\Programming\\VS\\Final_Project\\Code\\LampShade\\ShopManagement.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Behnam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Behnam\\Desktop\\Programming\\VS\\Final_Project\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Behnam\\Desktop\\Programming\\VS\\Final_Project\\Code\\LampShade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
+            },
+            "C:\\Users\\Behnam\\Desktop\\Programming\\VS\\Final_Project\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+              "projectPath": "C:\\Users\\Behnam\\Desktop\\Programming\\VS\\Final_Project\\Code\\LampShade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Slugify.Core": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
